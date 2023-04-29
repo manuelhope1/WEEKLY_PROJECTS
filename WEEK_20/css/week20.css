@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&family=Raleway:wght@300&family=Roboto:wght@300&display=swap');
+body{
+    min-height: 100vh;
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+.logo{
+    height: 40px;
+}
+
+
+
+.navi{
+    height: 9vh;
+    min-height: 8vh;
+    background-color: rgb(178, 109, 242);
+}
+
+.second{
+    height: 90vh;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    overflow-y: scroll;
+
+}
+
+.info{
+    padding-left: 50px;
+}
+
+.name{
+    font-family: 'Raleway', sans-serif;
+}
+
+.h1{
+    font-family: 'Merriweather', serif;
+}
+
+.p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.image{
+    height: 400px;
+   
+}
+
+.imgh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.but{
+    height: 40px;
+    border: none;
+    background-color:rgb(76, 148, 229);
+    color: white;
+    font-family: 'Merriweather', serif;
+    padding: 0px 20px;
+}
+
+li a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.second{
+    background-image: 
+        conic-gradient(
+            from var(--rotate),
+            rgb(204, 150, 255),
+            #FFF 50%
+        );
+    animation: effectBg 5s linear infinite;
+}
+
+@keyframes effectBg{
+    from{
+        --rotate: 0deg;
+    } to{
+        --rotate: 360deg;
+    }
+}
+
+
+@media all and (max-width){
+
+}

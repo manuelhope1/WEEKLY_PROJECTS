@@ -1,0 +1,305 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body{
+  background-color: black;
+}
+
+.first{
+  height: 85vh;
+  min-height: 85vh;
+  width: 100%;
+  background-size: 100% 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(./images/netflix.jpg);
+}
+
+#Nav{
+  position: relative;
+  height: 10%;
+  padding: 5px 120px;
+}
+
+.logo{
+  height: 50px;
+}
+
+.Sign{
+  background-color: #E50914;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 4px 16px;
+  border-radius: 5px;
+}
+
+.Hero{
+  height: 90%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info{
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.email{
+  width: 50%;
+  height: 55px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.603);
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.emailbox{
+  display:flex;
+  justify-content:center;
+  margin-top:20px;
+
+}
+
+
+#start{
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #E50914;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  position: relative;
+  width: auto;
+}
+
+.Hr{
+  height: 5px;
+  width: 100vw;
+  background-color: rgba(128, 128, 128, 0.326);
+  border: none;
+  margin: 0;
+}
+
+input::-webkit-input-placeholder {
+  padding-left: 10px;
+  color: rgba(218, 218, 218, 0.965);
+}
+
+.Tile1{
+  padding: 60px 0;
+}
+
+.Tile1info{
+  position:relative;
+  align-self: center;
+  padding-left: 150px;
+}
+
+.tileh1{
+  font-size: 7vw;
+  font-weight: 900;
+  margin: 0;
+}
+
+.tilep{
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem 0 0;
+}
+
+.image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Tile2{
+  padding: 50px 0;
+}
+
+.Tile2info{
+  position:relative;
+  align-self: center;
+}
+
+.Tile3{
+  padding: 100px 0;
+  padding-left: 150px;
+}
+
+.Tile4{
+  padding: 40px;
+}
+
+.Tile4info{
+  position:relative;
+  align-self: center;
+}
+
+.Tile5{
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.Faq{
+  text-align: center;
+}
+
+.faqsub {
+  width: 100%;
+  min-height: 75px;
+  background-color: #303030;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+
+
+.faqinfo {
+  background-color: #303030 !important;
+  border-color: #303030 !important;
+}
+
+
+
+.ready{
+  font-weight: 600;
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+.Tile5-1{
+  padding: 70px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.lineh{
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+}
+
+.Tile6{
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.langbox{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgba(255, 255, 255, 0.7) ;
+  min-width: auto;
+  width: auto;
+  padding: 5px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 30px 0;
+}
+
+
+.lang{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.link{
+  margin: 0;
+  padding: 0;
+}
+
+.linka {
+  color: rgba(255, 255, 255, 0.7) ;
+  font-size: 0.9rem;
+}
+
+
+@media all and (max-width:1200px) {
+  #Nav{
+    padding: 0;
+  }
+  
+  .emailbox{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email{
+    width: 80%;
+  }
+
+  #start{
+    max-width: 50%;
+    margin-top: 10px;
+  }
+
+
+  .Tile1info{
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  /* .tileh1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0;
+  }
+  
+  .tilep{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1rem 0 0;
+  }  */
+
+  .Tile2info{
+    text-align: center;
+    padding: 0 35px;
+  }
+
+  .Tile3{
+    padding-left: 0px;
+  }
+
+  .Tile4info{
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .logo{
+    height: 30px;
+  }
+
+  .Sign{
+    font-size: 14px;
+  }
+
+  .info{
+    font-size: 5vw;
+  }
+
+  .infop{
+    font-size: 22px;
+  }
+
+
+}
+

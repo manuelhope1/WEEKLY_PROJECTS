@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(4, 1, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    padding: 20px 10px; 
+    border: white solid 1px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.yes{
+    height: 30px;
+    width: 60px;
+    border: rgb(73, 208, 66) 1px solid;
+    color: white;
+    background-color:unset;
+}
+
+
+.no{
+    height: 30px;
+    width: 60px;
+    background-color: unset;
+    border: rgb(255, 44, 44) 1px solid;
+    color: white;
+}
+
+#age{
+    width: 50px;
+    margin-top: 20px;
+    outline: none;
+    height: 20px;
+}
+
+#submit{
+    height: 30px;
+    width: 80px;
+    background-color: rgb(10, 85, 159);
+    border: none;
+    color: white;
+    margin-top: 10px;
+}
+

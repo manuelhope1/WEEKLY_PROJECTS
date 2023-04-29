@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="week16.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Are you a child between 1-18 years?</h3>
+        <div>
+            <button class="yes">YES</button>
+            <button class="no">NO</button>
+        </div>
+        <div>
+            <label style="font-weight: bold;">Enter your age:</label>
+        <input type="number" name="" id="age" >
+        </div>
+
+        <button id="submit">SUBMIT</button>
+    </div>
+    
+
+    <script>
+
+    const yes = document.querySelector('.yes');
+    const no = document.querySelector('.no');
+    const submit = document.querySelector('#submit');
+
+ 
+
+
+    yes.addEventListener('click', function(){
+        yes.style.backgroundColor = 'rgb(73, 208, 66) ';
+        yes.style.color = 'white';
+        no.disabled = true;
+    })
+
+    no.addEventListener('click', function(){
+        no.style.backgroundColor = 'rgb(255, 44, 44) ';
+        no.style.color = 'white';
+        yes.disabled = true;
+    })
+
+    submit.addEventListener('click', function(){
+        let input = document.querySelector('#age').value; 
+        if (input > 18) {
+            alert("You aren't a kid'")
+        }
+        else if (input <1){
+            alert("Your age isn't valid");
+        }
+    })
+    </script>
+</body>
+</html>

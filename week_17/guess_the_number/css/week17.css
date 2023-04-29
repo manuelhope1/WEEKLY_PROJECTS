@@ -1,0 +1,96 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Libre+Baskerville&display=swap');
+body{
+    height: 100vh;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#name{
+    color: white ;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    font-family: 'Gloock', serif;
+    text-decoration: underline rgb(114, 80, 80);
+}
+
+#guess-game{
+height: auto;
+min-height: 320px;
+width: 35%;
+background: linear-gradient(to right,#104fd7, rgb(12, 105, 37));  
+display: flex;
+align-items: center;
+flex-direction: column;
+padding: 20px 0px;
+}
+
+#infobox{
+    height: 40px;
+    width: auto;
+    background-color:black;
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#infobox:hover{
+    animation: shake infinite;
+}
+
+#input{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: none;
+    text-align: center;  
+    font-size: 30px;  
+    background-color: rgb(16, 9, 9); 
+    cursor:grab;
+    color: white;
+    outline: none;
+}
+
+#play{
+    height: 30px;
+    width: 100px;
+    font-weight: 900;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+#play:hover{
+    background-color: white;
+    border: 1px black solid;
+    color: black;
+}
+
+
+#reset{
+    height: 30px;
+    width: 100px;
+    font-weight: 900;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+#reset:hover{
+    background-color: rgba(255, 255, 255, 0.91);
+    border: 1px black solid;
+    color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+

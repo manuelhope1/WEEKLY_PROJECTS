@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.box {
+  min-height: 400px;
+  height: 450px;
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 30px;
+}
+
+.resbox {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    hsl(0, 100%, 75%),
+    hsl(0, 88%, 53%)
+  );
+
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rinfo {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-top: 30px;
+  color: white;
+}
+form{
+  display: grid;
+  row-gap: 8px;
+}
+
+form div{
+  display: flex;
+  justify-content: space-between;
+}
+label{
+  margin: 10px;
+}
+
+select{
+  width: 150px;
+  border: none;
+  outline: none;
+}
+
+.sel1{
+  background: hsla(0, 100%, 67%);
+  color: white;
+  font-weight: 700;
+}
+
+.sel2{
+  background: hsl(39, 100%, 56%);
+  color: white;
+  font-weight: 700;
+}
+
+.sel3{
+  background: hsla(166, 100%, 37%);
+  color: white;
+  font-weight: 700;
+}
+
+.sel4{
+  background: hsl(234, 85%, 45%);
+  color: white;
+  font-weight: 700;
+}
+
+.sel5{
+  background: rgb(200, 88, 234);
+  color: white;
+  font-weight: 700;
+}
+.scoreb {
+  height: 250px;
+  width: 270px;
+  color: black !important;
+  border-radius: 10px;
+  /* background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  ); */
+  background-color: white;
+  border: 5px solid white;
+
+}
+
+.big {
+  font-weight: 800;
+  font-size: 60px;
+  color: white;
+}
+
+.rend {
+  text-align: center;
+  padding: 0 60px;
+}
+
+.p1 {
+  color: white;
+  font-size: 25px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 400;
+}
+
+.p2 {
+  color: rgba(255, 255, 255, 0.635);
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+
+.sumbox {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sum {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+
+
+.but {
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  background: hsl(224, 30%, 27%) ;
+  color: white;
+  font-weight: 700;
+}
+
+.but:hover{
+    outline: 2px solid white;
+    outline-offset: 3px;
+    transition: 200ms;
+}
+
+.orderbox{
+  margin-bottom: 30px;
+  height: 350px;
+  width: 250px;
+  margin-left: 30px;
+  display: grid;
+  row-gap: 10px;
+  overflow-y: scroll;
+}
+
+.orderp{
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+  padding-left: 10px;
+  padding: 10px 0;
+  display: flex;
+}
+
+.orderin{
+  margin-left: 10px;
+}
