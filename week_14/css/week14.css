@@ -1,0 +1,93 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+body{
+   background-repeat: no-repeat; 
+   background-size: 100% 100%;
+   
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh; 
+}
+
+.box{
+    background-color: rgba(0, 0, 0, 0.8); 
+    height: 500px;
+    width: 400px;
+    color: white;
+    padding: 10px 0;
+    /* background: linear-gradient(to right,#2852c7, rgb(141, 203, 110));  */
+}
+
+.flexy{
+
+    padding-top: 20px;
+}
+
+.emoji{
+    font-size:25px; 
+    padding-right: 10px;
+}
+.inputs{
+    height: 35px;
+    background-color: rgba(0,0,0,0.7);
+    border: none;
+    width: 323px;
+    color: white;
+}
+
+.button{
+    height: 30px;
+    font-weight: 800;
+    width: 120px;
+
+}
+
+.imgg{
+    height: 30px;
+    padding: 0 5px;
+}
+
+::-webkit-input-placeholder {
+   color: rgb(200, 188, 188);
+   padding-left: 10px;
+}
+
+.greet::after{
+    content: 'WELCOME';
+    animation: animate 5s infinite linear;
+}
+
+@keyframes animate {
+    0% {content: 'WELCOME';}
+    25% {content: 'SALUT';}
+    50% {content: 'BIENVENIDO';}
+    75% {content: '你好';}
+    100% {content: 'OLÁ';}
+}
+.in{
+    background-color:rgb(40, 107, 215);
+    color: white;
+    border: none;
+}
+
+.in:hover{
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    color:rgb(40, 107, 215);   
+}
+
+.out{
+    background-color: rgb(255, 11, 11);
+    color: white;
+    border: none;
+}
+
+.out:hover{
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    color:rgb(255, 11, 11);  
+}

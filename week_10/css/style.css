@@ -1,0 +1,26 @@
+#label1{
+	font-weight: lighter;
+	font-size: 20px;
+}
+input::placeholder{
+	color: blue;
+	font-weight: lighter;
+	text-align: center;
+}
+
+#input1{
+	height: 35px;
+	width: 93%;
+	border-bottom: 1px solid black;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+.button1{
+	height: 40px; width: 150px;background-color: #1363df;border: black solid 1px; color: white;font-weight: bolder;
+
+}
+.button2{
+	height: 40px; width: 150px;background-color: #dff6ff;border: none; color: black;font-weight: bolder;
+
+}
