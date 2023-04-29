@@ -1,0 +1,24 @@
+.navv{
+	background-color: #228B22;
+	border: none;
+	border-radius: 0;
+	height: 62px;
+	padding-top: 5px;
+	margin-bottom: 0;
+}
+
+.navr{
+	font-weight: bolder;
+	color: white;
+	font-size: 17px;
+}
+
+.buttonn{
+	color: black; 
+	width: 120px; 
+	height: 40px;
+	border-radius: 15px;
+	 border: none;
+	 font-weight: bolder;
+	 background-color: #FFD700;
+}
