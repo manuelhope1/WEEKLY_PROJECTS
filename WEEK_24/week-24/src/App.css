@@ -27,11 +27,7 @@ body {
 .resbox {
   width: 50%;
   height: 100%;
-  background: linear-gradient(
-    to bottom,
-    hsl(0, 100%, 75%),
-    hsl(0, 88%, 53%)
-  );
+  background: linear-gradient(to bottom, hsl(0, 100%, 75%), hsl(0, 88%, 53%));
 
   border-radius: 30px;
   display: flex;
@@ -47,50 +43,50 @@ body {
   padding-top: 30px;
   color: white;
 }
-form{
+form {
   display: grid;
   row-gap: 8px;
 }
 
-form div{
+form div {
   display: flex;
   justify-content: space-between;
 }
-label{
+label {
   margin: 10px;
 }
 
-select{
+select {
   width: 150px;
   border: none;
   outline: none;
 }
 
-.sel1{
+.sel1 {
   background: hsla(0, 100%, 67%);
   color: white;
   font-weight: 700;
 }
 
-.sel2{
+.sel2 {
   background: hsl(39, 100%, 56%);
   color: white;
   font-weight: 700;
 }
 
-.sel3{
+.sel3 {
   background: hsla(166, 100%, 37%);
   color: white;
   font-weight: 700;
 }
 
-.sel4{
+.sel4 {
   background: hsl(234, 85%, 45%);
   color: white;
   font-weight: 700;
 }
 
-.sel5{
+.sel5 {
   background: rgb(200, 88, 234);
   color: white;
   font-weight: 700;
@@ -107,7 +103,6 @@ select{
   ); */
   background-color: white;
   border: 5px solid white;
-
 }
 
 .big {
@@ -151,36 +146,32 @@ select{
   padding-top: 30px;
 }
 
-
-
 .but {
   width: 200px;
   height: 50px;
   border-radius: 30px;
   border: none;
-  background: hsl(224, 30%, 27%) ;
+  background: hsl(224, 30%, 27%);
   color: white;
   font-weight: 700;
 }
 
-.but:hover{
-    outline: 2px solid white;
-    outline-offset: 3px;
-    transition: 200ms;
+.but:hover {
+  outline: 2px solid white;
+  outline-offset: 3px;
+  transition: 200ms;
 }
 
-.orderbox{
+.orderbox {
   margin-bottom: 30px;
   height: 350px;
   width: 250px;
   margin-left: 30px;
-  display: grid;
-  row-gap: 10px;
   overflow-y: scroll;
 }
 
-.orderp{
-  height: auto;
+.orderp {
+  height: 110px;
   width: 100%;
   border-radius: 5px;
   background-color: grey;
@@ -188,8 +179,9 @@ select{
   padding-left: 10px;
   padding: 10px 0;
   display: flex;
+  margin-bottom: 7px;
 }
 
-.orderin{
+.orderin {
   margin-left: 10px;
 }

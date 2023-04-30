@@ -1,46 +1,36 @@
 import React, { Component } from "react";
 
 export default class Order extends Component {
-    constructor(props) {
-        super (props);
-        this.state = {
-            order: [
-              {
-                toppings: "",
-                size: "",
-                drink: "",
-                extra: "",
-                delivery: "",
-              },
-             
-            ],
-            toppings: "",
-            size: "",
-            drink: "",
-            extra: "",
-            delivery: "",
-          };
-    }
-    inputChange = (e) => {
-        e.preventDefault();
-        this.setState({ [e.target.name]: e.target.value });
-      };
+  constructor(props) {
+    super(props);
+    this.state = {
+      order: [],
+      toppings: "",
+      size: "",
+      drink: "",
+      extra: "",
+      delivery: "",
+    };
+  }
+  inputChange = (e) => {
+    e.preventDefault();
+    this.setState({ [e.target.name]: e.target.value });
+  };
 
-    inputSubmit = (e) => {
-        e.preventDefault();
-        const newInfo = {
-          toppings: "Toppings:" + " " + this.state.toppings,
-          size: "Sizs:" + " " + this.state.size,
-          drink: "Drink:" + " " + this.state.drink,
-          extra: "Extra:" + " " + this.state.extra,
-          delivery: "Delivery:" + " " + this.state.delivery,
-        };
-        this.setState({
-          order: [...this.state.order, newInfo],
-        });
-        console.log(newInfo)
-      };
-      
+  inputSubmit = (e) => {
+    e.preventDefault();
+    const newInfo = {
+      toppings: this.state.toppings,
+      size: this.state.size,
+      drink: this.state.drink,
+      extra: this.state.extra,
+      delivery: this.state.delivery,
+    };
+    this.setState({
+      order: [...this.state.order, newInfo],
+    });
+  };
+
   render() {
     return (
       <div className="box">
@@ -52,8 +42,12 @@ export default class Order extends Component {
             <form>
               <div>
                 <label>Toppings</label>
-                <select className="sel1" onChange={this.inputChange} defaultValue="none" name="toppings" >
-                  <option value="none"  disabled>
+                <select
+                  className="sel1"
+                  onChange={this.inputChange}
+                  defaultValue="none"
+                  name="toppings">
+                  <option value="none" disabled>
                     Select an Option
                   </option>
                   <option value="Chicken Tuna">Chicken Tuna</option>
@@ -63,8 +57,12 @@ export default class Order extends Component {
               </div>
               <div>
                 <label>Size</label>
-                <select className="sel2" onChange={this.inputChange} defaultValue="none" name="size" >
-                  <option value="none" name="size"  disabled>
+                <select
+                  className="sel2"
+                  onChange={this.inputChange}
+                  defaultValue="none"
+                  name="size">
+                  <option value="none" name="size" disabled>
                     Select an Option
                   </option>
                   <option value="Jumbo">Jumbo</option>
@@ -75,8 +73,12 @@ export default class Order extends Component {
               </div>
               <div>
                 <label>Drink</label>
-                <select className="sel3" onChange={this.inputChange} defaultValue="none" name="drink">
-                  <option value="none" name="drink"  disabled>
+                <select
+                  className="sel3"
+                  onChange={this.inputChange}
+                  defaultValue="none"
+                  name="drink">
+                  <option value="none" name="drink" disabled>
                     Select an Option
                   </option>
                   <option value="Apple Juice">Apple Juice</option>
@@ -88,8 +90,12 @@ export default class Order extends Component {
               </div>
               <div>
                 <label>Extra</label>
-                <select className="sel4" onChange={this.inputChange} defaultValue="none1" name="extra">
-                  <option value="none1" name="extra"  disabled>
+                <select
+                  className="sel4"
+                  onChange={this.inputChange}
+                  defaultValue="none1"
+                  name="extra">
+                  <option value="none1" name="extra" disabled>
                     Select an Option
                   </option>
                   <option value="Chesse">Chesse</option>
@@ -100,8 +106,12 @@ export default class Order extends Component {
               </div>
               <div>
                 <label>Delivery</label>
-                <select className="sel5"onChange={this.inputChange} defaultValue="none" name="delivery"> 
-                  <option value="none" name="delivery"  disabled>
+                <select
+                  className="sel5"
+                  onChange={this.inputChange}
+                  defaultValue="none"
+                  name="delivery">
+                  <option value="none" name="delivery" disabled>
                     Select an Option
                   </option>
                   <option value="Pick-Up">Pick-Up</option>
@@ -111,36 +121,28 @@ export default class Order extends Component {
             </form>
           </div>
           <div className="rend">
-            <button className="but" onClick={this.inputSubmit}>Place Order</button>
+            <button className="but" onClick={this.inputSubmit}>
+              Place Order
+            </button>
             <p className="p2">Best Pizza In Town</p>
           </div>
         </div>
         <div className="sumbox">
           <p className="sum">Orders Placed</p>
           <div className="orderbox">
-          {this.state.order.map((order, index) => {
+            {this.state.order.map((order, index) => {
               return (
                 <div className="orderp" key={index}>
-              <div>
-                <p>{order.toppings}</p>
-                <p>
-                {order.size}
-                </p>
-                <p>
-                {order.drink}
-                </p>
-                <p>
-                {order.extra}
-                </p>
-                <p>
-                {order.delivery}
-                </p>
-              </div>
-              
-            </div>
+                  <div>
+                    <p>Toppings: {order.toppings}</p>
+                    <p>Size: {order.size}</p>
+                    <p>Order: {order.drink}</p>
+                    <p>Extra: {order.extra}</p>
+                    <p>Delivery: {order.delivery}</p>
+                  </div>
+                </div>
               );
             })}
-            
           </div>
         </div>
       </div>
