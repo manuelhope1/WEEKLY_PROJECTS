@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.App {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.clock {
+  margin-top: 100px;
+  padding: 10px 50px;
+  box-shadow: 0 0 100px #fff;
+  animation: glowing 2s ease-in-out infinite;
+  border-radius: 20px;
+  font-size: 40px;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 100px #fff;
+  }
+  50% {
+    box-shadow: 0 0 100px #00ff00;
+  }
+  100% {
+    box-shadow: 0 0 100px #ff00ff;
+  }
+}
