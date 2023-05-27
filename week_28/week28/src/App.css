@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+body {
+  background-image: url("./assets/back5.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  position: fixed;
+  inset: 0px;
+  overflow: hidden;
+}
+
+.navv {
+  height: 12vh;
+}
+.devvv {
+  margin-top: 10px;
+  color: white;
+}
+.pro-cont {
+  height: 80vh;
+  overflow-y: scroll;
+  display: flex;
+}
+
+.cardbody {
+  height: 280px !important;
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.img-card {
+  margin-top: 10px;
+  height: 170px;
+  width: 100%;
+}
+
+.err {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errimg {
+  height: 600px;
+}
+
+.devinfol {
+  height: 80vh;
+  color: white;
+  overflow-y: scroll;
+}
+
+.devinfor {
+  height: 80vh;
+}
+
+.devinfo {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+
+.videoinfob {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoinfo {
+  height: 90%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.immgg {
+  height: 50vh !important;
+}
