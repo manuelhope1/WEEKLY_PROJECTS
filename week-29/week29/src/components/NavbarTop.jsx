@@ -1,7 +1,12 @@
 import React from "react";
 import { Navbar, Container, Nav, Form, Button } from "react-bootstrap";
 
-const NavbarTop = () => {
+const NavbarTop = (props) => {
+  const searchHandler = (e) => {
+    let search = e.target.value;
+    props.searchHandler(search);
+  };
+
   return (
     <Navbar bg="bg-transparent" expand="lg" variant="dark">
       <Container fluid>
@@ -18,12 +23,13 @@ const NavbarTop = () => {
           </Nav>
           <Form className="d-flex">
             <Form.Control
+              value={props.word}
               type="search"
               placeholder="Search"
               className="me-2"
               aria-label="Search"
+              onChange={searchHandler}
             />
-            <Button variant="outline-success">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>

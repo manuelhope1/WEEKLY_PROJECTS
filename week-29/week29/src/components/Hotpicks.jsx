@@ -27,8 +27,3 @@ const Hotpicks = (props) => {
 };
 
 export default Hotpicks;
-{
-  /* <marquee>
-            jbdnjbndjbnsjfbfshkjbjfshjbfsvjhsfvshjfbsfhjksfbksfbsfjkbsnfkjfbjksfbnkjfbsfjkbnsfjkjbdnjbndjbnsjfbfshkjbjfshjbfsvjhsfvshjfbsfhjksfbksfbsfjkbsnfkjfbjksfbnkjfbsfjkbnsfjkjbdnjbndjbnsjfbfshkjbjfshjbfsvjhsfvshjfbsfhjksfbksfbsfjkbsnfkjfbjksfbnkjfbsfjkbnsfjk
-          </marquee> */
-}
